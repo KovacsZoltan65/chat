@@ -29,7 +29,7 @@ class MessageSent implements ShouldBroadcast
      */
     public function broadcastOn(): Channel
     {
-        return new PrivateChannel('messages');
+        return new PrivateChannel('messages.rooms.{id}');
         //return [
         //    new PrivateChannel('channel-name'),
         //];

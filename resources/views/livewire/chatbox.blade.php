@@ -11,6 +11,7 @@ new class extends Component
      */
     public array $messages = [];
     public string $message = '';
+    public Room $room;
 
     public function addMessage()
     {
@@ -19,7 +20,7 @@ new class extends Component
         $this->reset('message');
     }
 
-    #[On('echo-private:messages,MessageSent')]
+    #[On('echo-private:messages.rooms.{room.id},MessageSent')]
     public function onMessageSent($event)
     {
         //dd($event);

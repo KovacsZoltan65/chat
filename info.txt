@@ -6,3 +6,27 @@ laravel new chat
 	Would you like to initialize a Git repository?	[yes]
     Which database will your application use?       [mysql]
     Default database updated. Would you like to run the default database migrations? [yes]
+
+php artisan install:broadcast
+     Would you like to install Laravel Reverb?      [yes]
+     Would you like to install and build the Node dependencies required for broadcasting?   [yes]
+
+composer require laravel/prompts
+composer require blade-ui-kit/blade-heroicons
+
+.env -> QUEUE_CONNECTION=sync
+
+php artisan serve
+npm run dev
+php artisan reverb:start
+php artisan queue:work
+
+php artisan make:event MessageSent
+php artisan make:command SendMessageCommand
+php artisan make:volt ChatBox --class
+
+Kovács Zoltán
+zoltan1_kovacs@msn.com | password
+
+Völgyes Ildikó
+volgyes.ildiko@hotmail.com | password

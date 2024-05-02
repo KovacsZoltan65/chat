@@ -1,0 +1,4 @@
+*/BufferHeight 500  php artisan serve
+*/BufferHeight 500  npm run dev
+*/BufferHeight 500  php artisan reverb:start
+*/BufferHeight 500  php artisan queue:work

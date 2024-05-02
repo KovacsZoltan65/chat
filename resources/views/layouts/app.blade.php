@@ -32,5 +32,8 @@
                 {{ $slot }}
             </main>
         </div>
+
+        <livewire:chatbox />
+        
     </body>
 </html>
